@@ -8,7 +8,7 @@ const storage = new CloudinaryStorage({
   params: {
     folder: "resumes",
     resource_type: "raw", 
-    public_id: (req, file) => `resume_${Date.now()}`,
+    public_id: (req, file) => `resume_${Date.now()}.pdf`,
   },
 });
 
