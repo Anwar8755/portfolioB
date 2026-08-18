@@ -11,6 +11,7 @@ import contactRoutes from "./routes/contactRoutes.js";
 import skillRoutes from "./routes/skillRoutes.js";
 import authRoutes from "./routes/authRoutes.js";
 import resumeRoutes from "./routes/resumeRoutes.js"; 
+import aiRoute from "./routes/ai.js";
 
 // env config
 dotenv.config();
@@ -35,7 +36,8 @@ app.use("/api/projects", projectRoutes);
 app.use("/api/contacts", contactRoutes);
 app.use("/api/skills", skillRoutes);
 app.use("/api/auth", authRoutes);
-app.use("/api/resume", resumeRoutes); 
+app.use("/api/resume", resumeRoutes);
+app.use("/api/ai", aiRoute);
 
 // base route
 app.get("/", (req, res) => {

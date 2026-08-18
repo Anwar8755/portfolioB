@@ -13,7 +13,7 @@ router.post("/", submitMessage);
 // admin: get all messages
 router.get("/", getAllMessages);
 
-// optional: delete message
+// admin: delete message
 router.delete("/:id", deleteMessage);
 
 export default router;

@@ -8,4 +8,4 @@ router.post("/", upload.single("resume"), uploadResume);
 router.get("/", getResume);
 router.delete("/", deleteResume);
 
-export default router; // ✅ ES Module export
+export default router; 

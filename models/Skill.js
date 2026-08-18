@@ -11,11 +11,11 @@ const skillSchema = new mongoose.Schema({
   },
   color: {
     type: String,
-    default: "#000000", // badge background color
+    default: "#000000", 
   },
   textColor: {
     type: String,
-    default: "#ffffff", // badge text color
+    default: "#ffffff", 
   }
 });
 

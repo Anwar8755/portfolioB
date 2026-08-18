@@ -12,8 +12,8 @@ export const addSkill = async (req, res) => {
     const newSkill = new Skill({
       name,
       icon,
-      color: color || "#000000",       // fallback to black
-      textColor: textColor || "#ffffff" // fallback to white
+      color: color || "#000000",      
+      textColor: textColor || "#ffffff"
     });
 
     await newSkill.save();
